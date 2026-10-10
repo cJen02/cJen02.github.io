@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jenish Chauhan — Robotics & Mechatronics</title>
-  <meta name="description" content="Jenish Chauhan — M.Tech Mechanical Engineering (IIT Gandhinagar), B.Tech Mechatronics. Robotics, simulation, embedded systems and learning-based control.">
+  <meta name="description" content="Jenish Chauhan — PhD student in Mechanical Engineering at IIT Gandhinagar (Human-Centered Robotics Lab). Upper-limb exoskeletons, musculoskeletal simulation and learning-based control.">
   <meta property="og:title" content="Jenish Chauhan — Robotics & Mechatronics">
-  <meta property="og:description" content="Robotics, simulation, embedded systems and learning-based control.">
+  <meta property="og:description" content="PhD student, Human-Centered Robotics Lab, IIT Gandhinagar. Upper-limb exoskeletons and musculoskeletal simulation.">
   <meta property="og:image" content="https://cjen02.github.io/photo.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="https://avatars.githubusercontent.com/u/86952828?s=64&v=4">
@@ -119,6 +119,13 @@
     .skills li { padding: 3px 0; }
     .skills h3 { font-size: 15px; margin-bottom: 8px; }
 
+    .pubs { list-style: none; padding: 0; margin: 0; display: grid; gap: 20px; }
+    .pubs li { padding-left: 16px; border-left: 3px solid var(--accent); }
+    .pub-title { font-weight: 600; font-size: 17px; color: var(--text); }
+    .pub-authors { color: var(--muted); font-size: 15px; margin-top: 4px; }
+    .pub-authors strong { color: var(--text); font-weight: 600; }
+    .pub-venue { color: var(--muted); font-size: 14px; font-style: italic; }
+    .pub-links { font-size: 14px; margin-top: 4px; }
     .contact-list { display: flex; flex-wrap: wrap; gap: 12px; }
 
     footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
@@ -139,6 +146,8 @@
         <a class="brand" href="#top">Jenish<span>.</span></a>
         <div class="links">
           <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -151,9 +160,9 @@
   <main class="wrap" id="top">
     <div class="hero">
       <div>
-        <p class="eyebrow">// robotics · mechatronics · simulation</p>
+        <p class="eyebrow">// exoskeletons · musculoskeletal simulation · robotics</p>
         <h1>Jenish Chauhan</h1>
-        <p class="lede">Mechanical engineer (M.Tech, IIT Gandhinagar) with a mechatronics background, building robots end to end: from kinematics and simulation to embedded control on real hardware.</p>
+        <p class="lede">PhD student in Mechanical Engineering at IIT Gandhinagar, in the <a href="https://labs.iitgn.ac.in/hcr-lab/" target="_blank" rel="noopener">Human-Centered Robotics Lab</a>. I build upper-limb exoskeletons and the musculoskeletal simulations that help control them.</p>
         <div class="btns">
           <a class="btn primary" href="https://calendar.app.google/DXuMNVJTjEzKSgmY7" target="_blank" rel="noopener">Book a meeting</a>
           <a class="btn" href="#projects">See my work</a>
@@ -170,14 +179,54 @@
 
     <section id="about">
       <h2>About</h2>
-      <p class="about">I work where mechanics, electronics and software meet. My interests span robot manipulator modelling and control, physics-based simulation (MuJoCo, CoppeliaSim, Gazebo), reinforcement learning for musculoskeletal and robotic systems, and deploying models on edge hardware like the NVIDIA Jetson.</p>
+      <p class="about">I work where mechanics, electronics and software meet. I'm a PhD student at IIT Gandhinagar, advised by <a href="https://labs.iitgn.ac.in/hcr-lab/" target="_blank" rel="noopener">Prof. Vineet Vashista</a> in the Human-Centered Robotics Lab. My research uses physics-based musculoskeletal simulation to understand human movement and to design and control assistive robots. Beyond research, I enjoy robot modelling and control, simulators (MuJoCo, MyoSuite, CoppeliaSim, Gazebo), and deploying learned models on embedded hardware like the NVIDIA Jetson.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Upper-limb exoskeleton</h3>
+          <p>Designing an upper-limb exoskeleton for human-centered assistance and rehabilitation.</p>
+          <div class="tags"><span class="tag">Exoskeletons</span><span class="tag">Physical HRI</span><span class="tag">Control</span></div>
+        </article>
+        <article class="card">
+          <h3>Predictive musculoskeletal simulation</h3>
+          <p>A simulation framework that predicts human musculoskeletal behaviour and uses it to control the exoskeleton.</p>
+          <div class="tags"><span class="tag">MuJoCo</span><span class="tag">MyoSuite</span><span class="tag">RL</span></div>
+        </article>
+        <article class="card">
+          <h3>Contactless fatigue diagnosis</h3>
+          <p>Using simulated muscle fatigue and motion features to identify fatigued upper-limb muscle groups from real-world movement data.</p>
+          <div class="tags"><span class="tag">Biomechanics</span><span class="tag">Sim-to-real</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <a class="pub-title" href="https://arxiv.org/abs/2605.26151" target="_blank" rel="noopener">Towards Real-World Identification of Fatigued Muscle Groups via Musculoskeletal Simulation</a>
+          <div class="pub-authors"><strong>Jenishkumar Chauhan</strong>, Samarth Brahmbhatt, Vineet Vashista</div>
+          <div class="pub-venue">arXiv preprint arXiv:2605.26151, 2026</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2605.26151" target="_blank" rel="noopener">arXiv</a> · <a href="https://arxiv.org/pdf/2605.26151" target="_blank" rel="noopener">PDF</a></div>
+        </li>
+      </ol>
     </section>
 
     <section id="education">
       <h2>Education</h2>
       <div class="timeline">
         <div class="item">
-          <div class="when">2023 – 2025</div>
+          <div class="when">2024 – now</div>
+          <div>
+            <h3>PhD, Mechanical Engineering</h3>
+            <p>Indian Institute of Technology Gandhinagar · Human-Centered Robotics Lab · Advisor: Prof. Vineet Vashista</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2023 – 2024</div>
           <div>
             <h3>M.Tech, Mechanical Engineering</h3>
             <p>Indian Institute of Technology Gandhinagar</p>
@@ -253,7 +302,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p class="about">Open to research collaborations and robotics roles. The quickest way to reach me is to book a slot.</p>
+      <p class="about">Open to research collaborations in exoskeletons, musculoskeletal simulation and human-centered robotics. The quickest way to reach me is to book a slot.</p>
       <div class="contact-list">
         <a class="btn primary" href="https://calendar.app.google/DXuMNVJTjEzKSgmY7" target="_blank" rel="noopener">Book a meeting</a>
         <a class="btn" href="mailto:jenishkumar.chauhan@iitgn.ac.in">Email</a>
